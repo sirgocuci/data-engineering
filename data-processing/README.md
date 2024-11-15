@@ -1,20 +1,23 @@
-# Data processing
+# PDF Data Extraction
 
-In the `./pdfs` folder you will find a set of PDF files containing data that needs to be processed.
-Your task is to extract the data from these PDFs and store it in a structured format for further analysis.
+This project processes PDF files from the `./pdfs` folder and extracts structured data for analysis.
 
-Assume that these won't be the only PDFs you'll need to process, and that you'll need to scale your solution to handle a larger number of files, both in 
-terms of file structure and data volume.
+## Requirements
 
-Please code your solution using Python.
+- Python 3.7+
+- Libraries: PyPDF2, pandas, langdetect
 
-You're free to structure the project as you see fit, but make sure to include clear instructions on how to run your solution.
+## Setup
 
-## Attention points
+1. Install dependencies by running the following in a Jupyter Notebook cell:
+   ```python
+   !pip install PyPDF2 pandas langdetect
+   ```
 
-Make sure to consider the following points when designing your solution:
-* code quality - make sure your code is clean, readable, and maintainable
-* performance - as said before, in the future you'll need to process a larger number of files, so make sure your solution is scalable
-* error handling - make sure your solution can handle exceptions and edge cases (malformed files, etc.)
-* testing - make sure your solution is well tested
-* git usage - make sure your commits are well organized and that you have a good commit history
+2. Place your PDF files in the `./pdfs` folder.
+
+## Running the Solution
+
+To run the extraction, open the `extract_pdf.ipynb` notebook in Jupyter and execute the cells.
+
+The notebook will process all PDF files in the `./pdfs` folder and generate a structured DataFrame with the extracted information, such as word count, language, most common word and more.
