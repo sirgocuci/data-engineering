@@ -1,11 +1,6 @@
-# Data-Driven Software Engineer Evaluation
+# PDF Data Extraction
 
-## Workflow for Submission
+This Python script processes PDF files in the `./pdfs` folder to extract useful information. It uses **PyPDF2** to read PDF content and metadata (such as title, author, and creation date). **langdetect** detects the document's language, while **pandas** structures and organizes the extracted data. The script calculates the total word count, identifies the most common word, counts the number of links, and measures the file size. **re** (regular expressions) is used to extract URLs from the text and filter out short words (at least 4 characters).
 
-1. **Fork this Repository**: please fork this repository to your own GitHub account to work independently
-2. **Complete the Tasks**: clone your fork locally, complete the tasks, and commit your changes to your fork
-3. When your work is complete, send the link to your repository to the following e-mail address: *softwarearchitect@minervadigitalintelligence.com*
+The output is a DataFrame containing structured data for each PDF file.
 
-## Deadline 
-
-You have 48 hours from the time of receiving this link to submit your completed repository link via email.
